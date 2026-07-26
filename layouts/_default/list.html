@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div style="max-width: 720px; margin: 0 auto; padding: 60px 24px;">
+  <h1 style="font-size: 2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 40px;">{{ .Title }}</h1>
+
+  <div style="display: flex; flex-direction: column; gap: 32px;">
+    {{ range .Pages }}
+    <article style="padding: 24px; background: #1e293b; border: 1px solid #334155; border-radius: 8px; transition: border-color 0.2s;">
+      <a href="{{ .Permalink }}" style="text-decoration: none; color: inherit; display: block;">
+        <h2 style="font-size: 1.4rem; font-weight: 600; color: #f1f5f9; margin-bottom: 8px;">{{ .Title }}</h2>
+        <time style="font-size: 0.88rem; color: #94a3b8;">{{ .Date.Format "2006-01-02" }}</time>
+        {{ if .Summary }}
+        <p style="margin-top: 12px; color: #cbd5e1; line-height: 1.6;">{{ .Summary }}</p>
+        {{ end }}
+      </a>
+    </article>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

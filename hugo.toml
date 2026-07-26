@@ -1,28 +1,7 @@
 baseURL = "https://didi-dede0123.github.io/"
 languageCode = "zh-CN"
 title = "didididi"
-theme = "beautifulhugo"
 hasCJKLanguage = true
 
 [params]
 description = "踩坑记录 · 学习笔记 · 项目总结"
-defaultTheme = "auto"
-
-# 导航菜单
-[menu]
-  [[menu.main]]
-    name = "首页"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    name = "文章"
-    url = "/posts/"
-    weight = 2
-  [[menu.main]]
-    name = "关于"
-    url = "/about/"
-    weight = 3
-  [[menu.main]]
-    name = "GitHub"
-    url = "https://github.com/didi-dede0123"
-    weight = 4
