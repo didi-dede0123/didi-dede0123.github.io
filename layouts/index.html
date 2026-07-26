@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="container">
+    <div class="home-header text-center">
+        <h1>{{ .Site.Title }}</h1>
+        <hr>
+        <!-- 站点声明、自我介绍 -->
+        <div class="home-desc" style="max-width:700px;margin:2rem auto;font-size:18px;line-height:1.8;opacity:0.9;">
+            <p>欢迎来到我的个人博客。</p>
+            <p>本站仅用于个人学习、笔记记录与生活分享，所有文章均为原创内容。</p>
+            <p><strong>版权声明：</strong>站内全部文字、图片内容未经本人允许，禁止转载、商用。</p>
+            <p>如有文章内容、素材侵权，请联系我，我会第一时间删除处理。</p>
+        </div>
+        <a href="/posts/" class="btn" style="margin-top:2rem;padding:10px 24px;border:1px solid #fff;color:#fff;text-decoration:none;border-radius:4px;">浏览全部文章</a>
+    </div>
+</div>
+{{ end }}
