@@ -1,10 +1,14 @@
 baseURL = "https://didi-dede0123.github.io/"
-languageCode = "zh-CN"
+locale = "zh-CN" # 顺便把警告的languageCode替换掉
 title = "我的个人博客"
 theme = "beautifulhugo"
 hasCJKLanguage = true
 
 [params]
-  author = "didi-dede0123"
-  description = "技术笔记、日常随笔"
-  defaultTheme = "auto"
+description = "技术笔记、日常随笔"
+defaultTheme = "auto"
+
+# 修正author格式，适配beautifulhugo主题
+[params.author]
+name = "didididi"
+email = ""
