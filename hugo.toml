@@ -1,0 +1,10 @@
+baseURL = "https://didi-dede0123.github.io/"
+languageCode = "zh-CN"
+title = "我的个人博客"
+theme = "beautifulhugo"
+hasCJKLanguage = true
+
+[params]
+  author = "didi-dede0123"
+  description = "技术笔记、日常随笔"
+  defaultTheme = "auto"
